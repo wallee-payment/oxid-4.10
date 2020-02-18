@@ -8,15 +8,43 @@
  * @author customweb GmbH (http://www.customweb.com/)
  * @license http://www.apache.org/licenses/LICENSE-2.0  Apache Software License (ASL 2.0)
  */
-
 $sLangName = 'English';
 
 $aLang = array(
     'charset' => 'UTF-8',
+    'wleWallee' => 'WLE Wallee',
 	
-	'wle_wallee_Downloads' => 'Download documents',
-	'wle_wallee_Download Invoice' => 'Download invoice',
-	'wle_wallee_Download Packing Slip' => 'Download packing slip',
+	'SHOP_MODULE_GROUP_wleWalleewalleeSettings' => 'wallee Settings',
+	'SHOP_MODULE_GROUP_wleWalleeShopSettings' => 'Shop Settings',
+	'SHOP_MODULE_GROUP_wleWalleeSpaceViewSettings' => 'Space View Options',
+	'SHOP_MODULE_wleWalleeAppKey' => 'Authentication Key',
+	'SHOP_MODULE_wleWalleeUserId' => 'User Id',
+    'SHOP_MODULE_wleWalleeSpaceId' => 'Space Id',
+	'SHOP_MODULE_wleWalleeSpaceViewId' => 'Space View Id',
+	'SHOP_MODULE_wleWalleeEmailConfirm' => 'Email Confirm',
+	'SHOP_MODULE_wleWalleeInvoiceDoc' => 'Invoice Doc',
+	'SHOP_MODULE_wleWalleePackingDoc' => 'Packing Doc',
+	'SHOP_MODULE_wleWalleeEnforceConsistency' => 'Enforce consistency',
+    'SHOP_MODULE_wleWalleeLogLevel' => 'Log Level',
+    'SHOP_MODULE_wleWalleeLogLevel_' => ' - ',
+    'SHOP_MODULE_wleWalleeLogLevel_Error' => 'Error',
+    'SHOP_MODULE_wleWalleeLogLevel_Debug' => 'Debug',
+	'SHOP_MODULE_wleWalleeLogLevel_Info' => 'Info',
+	
+	'HELP_SHOP_MODULE_wleWalleeUserId' => 'The user requires full permission in the space the shop is linked to.',
+	'HELP_SHOP_MODULE_wleWalleeSpaceViewId' => 'The space view ID allows to control the styling of the payment form and the payment page within the space. In multi shop setups it allows to adapt the payment form to different styling per sub store without requiring a dedicated space.',
+	'HELP_SHOP_MODULE_wleWalleeEmailConfirm' => 'You may deactivate the OXID order confirmation email for wallee transactions.',
+	'HELP_SHOP_MODULE_wleWalleeInvoiceDoc' => 'You may allow customers to download invoices in their account area.',
+	'HELP_SHOP_MODULE_wleWalleePackingDoc' => 'You may allow customers to download packing slips in their account area.',
+	'HELP_SHOP_MODULE_wleWalleeEnforceConsistency' => 'Require that the line items of the transaction correspond to those of the purchase order in Magento. This may result in the wallee payment methods not being available to the customer in certain cases. In return, it is ensured that only correct data is transmitted to wallee.',
+	
+	'wle_wallee_Settings saved successfully.' => 'Settings saved successfully.',
+	'wle_wallee_Payment methods successfully synchronized.' => 'Payment methods successfully synchronized.',
+	'wle_wallee_Webhook URL updated.' => 'Webhook URL updated.',
+	//TODO remove uneeded
+	
+	'wle_wallee_Download Invoice' => 'Download Invoice',
+	'wle_wallee_Download Packing Slip' => 'Download Packing Slip',
 	'wle_wallee_Delivery Fee' => 'Delivery Fee',
 	'wle_wallee_Payment Fee' => 'Payment Fee',
 	'wle_wallee_Gift Card' => 'Gift Card',
@@ -34,6 +62,7 @@ $aLang = array(
 	'wle_wallee_Successfully created and sent refund job !id.' => 'Successfully created and sent refund job !id.',
 	'wle_wallee_Unable to load transaction for order !id.' => 'Unable to load transaction for order !id.',
 	'wle_wallee_Completions' => 'Completions',
+	'wle_wallee_Completion' => 'Completion',
 	'wle_wallee_Refunds' => 'Refunds',
 	'wle_wallee_Voids' => 'Voids',
 	'wle_wallee_Completion #!id' => 'Completion #!id',
@@ -49,7 +78,6 @@ $aLang = array(
 	'wle_wallee_Open in your wallee backend.' => 'Open in your wallee backend.',
 	'wle_wallee_Open' => 'Open',
 	'wle_wallee_wallee Link' => 'wallee Link',
-	'wle_wallee_You must agree to the terms and conditions.' => 'You must agree to the terms and conditions.',
 	
 	// tpl translations
 	'wle_wallee_Restock' => 'Restock',

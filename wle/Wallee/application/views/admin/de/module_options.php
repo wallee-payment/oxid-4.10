@@ -9,12 +9,43 @@
  * @license http://www.apache.org/licenses/LICENSE-2.0  Apache Software License (ASL 2.0)
  */
 
+
 $sLangName = 'Deutsch';
 
 $aLang = array(
     'charset' => 'UTF-8',
+    'wleWallee' => 'WLE Wallee',
+
+    'SHOP_MODULE_GROUP_wleWalleewalleeSettings' => 'wallee Einstellungen',
+	'SHOP_MODULE_GROUP_wleWalleeShopSettings' => 'Shop Einstellungen',
+	'SHOP_MODULE_GROUP_wleWalleeSpaceSettings' => 'Space View Id',
+    'SHOP_MODULE_wleWalleeAppKey' => 'Authentication Key',
+	'SHOP_MODULE_wleWalleeUserId' => 'Benutzer Id',
+    'SHOP_MODULE_wleWalleeSpaceId' => 'Space Id',
+	'SHOP_MODULE_wleWalleeSpaceViewViewId' => 'Space View Optionen',
+    'SHOP_MODULE_wleWalleeEmailConfirm' => 'Email Bestätigung',
+    'SHOP_MODULE_wleWalleeInvoiceDoc' => 'Rechnung',
+    'SHOP_MODULE_wleWalleePackingDoc' => 'Lieferschein',
+	'SHOP_MODULE_wleWalleeEnforceConsistency' => 'Konsistenz sicherstellen',
+    'SHOP_MODULE_wleWalleeLogLevel' => 'Log Level',
+    'SHOP_MODULE_wleWalleeLogLevel_' => ' - ',
+    'SHOP_MODULE_wleWalleeLogLevel_Error' => 'Error',
+    'SHOP_MODULE_wleWalleeLogLevel_Debug' => 'Debug',
+    'SHOP_MODULE_wleWalleeLogLevel_Info' => 'Info',
 	
-	'wle_wallee_Downloads' => 'Dokumente herunterladen',
+	
+	'HELP_SHOP_MODULE_wleWalleeUserId' => 'Der Benutzer benötigt volle Berechtigungen auf dem verbundenen space.',
+	'HELP_SHOP_MODULE_wleWalleeSpaceViewId' => 'Die Space View ID lässt das Gestalten der Zahlungsformulare und -seiten innerhalb eines Spaces. Dies kann u.A. für Multishopsysteme die unterschiedliche Aussehen haben sollten verwendet werden.',	'HELP_SHOP_MODULE_wleWalleeEmailConfirm' => 'You may deactivate the OXID order confirmation email for wallee transactions.',
+	'HELP_SHOP_MODULE_wleWalleeInvoiceDoc' => 'Sie können ihren Kunden erlauben Rechnungen für Ihre Bestellungen im Frontend-Bereich herunterzuladen.',
+	'HELP_SHOP_MODULE_wleWalleePackingDoc' => 'Sie können ihren Kunden erlauben Lieferscheine für Ihre Bestellungen im Frontend-Bereich herunterzuladen.',
+	'HELP_SHOP_MODULE_wleWalleeEmailConfirm' => 'Sie können OXID Bestellbestätigungen für wallee Transaktionen unterbinden.',
+	'HELP_SHOP_MODULE_wleWalleeEnforceConsistency' => 'Erfordere, dass die Einzelposten der Transaktion denen der Bestellung in Magento entsprechen. Dies kann dazu führen, dass die Zahlungsmethoden von wallee dem Kunden in bestimmten Fällen nicht zur Verfügung stehen. Im Gegenzug wird sichergestellt, dass nur korrekte Daten an wallee übertragen werden.',
+	
+	'wle_wallee_Settings saved successfully.' => 'Die Einstellungen wurden erfolgreich gespeichert.',
+	'wle_wallee_Payment methods successfully synchronized.' => 'Die Zahlarten wurden synchronisiert.',
+	'wle_wallee_Webhook URL updated.' => 'Webhook URL wurde aktualisiert.',
+	//TODO remove unneeded
+	
 	'wle_wallee_Download Invoice' => 'Rechnung herunterladen',
 	'wle_wallee_Download Packing Slip' => 'Lieferschein herunterladen',
 	'wle_wallee_Delivery Fee' => 'Liefergebühr',
@@ -49,7 +80,6 @@ $aLang = array(
 	'wle_wallee_Open in your wallee backend.' => 'Öffne im wallee backend.',
 	'wle_wallee_Open' => 'Öffnen',
 	'wle_wallee_wallee Link' => 'wallee Link',
-	'wle_wallee_You must agree to the terms and conditions.' => 'Sie müssen den AGBs und Datenschutzvereinbarung zustimmen.',
 	
 	// tpl translations
 	'wle_wallee_Restock' => 'Lagerbestand wiederherstellen',
@@ -67,5 +97,4 @@ $aLang = array(
 	'wle_wallee_Refund amount' => 'Rückerstattungsbetrag',
 	
 	// menu
-	'wle_wallee_transaction_title' => 'wallee Transaktion'
-);
+	'wle_wallee_transaction_title' => 'wallee Transaktion');
