@@ -176,6 +176,8 @@ class Transaction extends \oxbase {
 class_exists(\Wle\Wallee\Application\Model\Transaction::class);			$transaction = oxNew(\Wle\Wallee\Application\Model\Transaction::class);
 			/* @var $transaction \Wle\Wallee\Application\Model\Transaction */
 			$transaction->create();
+		} else {
+			$transaction->updateFromSession();
 		}
 		return $transaction;
 	}
